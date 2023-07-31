@@ -1,0 +1,65 @@
+site_name: Belvedere summer school
+
+# Configuration
+theme:
+  name: material
+  palette:
+    primary: blue
+  font:
+    text: Open Sans
+  language: en
+  features:
+    - navigation.path
+    - navigation.footer
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/LabMGF
+    - icon: fontawesome/brands/github
+      link: https://github.com/labmgf-polimi
+  consent:
+    title: Cookie consent
+    description: >- 
+
+
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+      
+repo_url: https://github.com/Tars4815/belvedere-summer-school
+
+plugins:
+  - search
+  - i18n:
+      languages:
+        it: "Italiano"
+        en: "English"
+      default_language: 'en'
+      no_translation:
+        it: "Questa pagina non è tradotta in italiano."
+        en: "This page isn't translated to English."
+
+markdown_extensions:
+  - attr_list
+
+# Page tree
+nav:
+  - Home: index.md
+  - Belvedere monitoring: belvedere.md
+  - Module 1: module1/module1.md
+  - Module 2: module2/module2.md
+  - Module 3: module3/module3.md
+  - Module 4: module4/module4.md
+  - Module 5: module5/module5.md
+  - Data: data.md
+  - Software: software.md
+  - Credits: credits.md
+
+
+
+
+
+
