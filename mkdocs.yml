@@ -52,7 +52,12 @@ nav:
   - Module 1: module1/module1.md
   - Module 2: module2/module2.md
   - Module 3: module3/module3.md
-  - Module 4: module4/module4.md
+  - Module 4:
+    - module4/module4.md
+    - module4/intro.md
+    - module4/vector.md
+    - module4/raster.md
+    - module4/layout.md  
   - Module 5: module5/module5.md
   - Data: data.md
   - Software: software.md
