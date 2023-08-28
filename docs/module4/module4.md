@@ -1,6 +1,8 @@
-# GIS
-
-
-## Overview
+# Overview
 
 [...]
+
+## Table of contents
+
+[...]
+
