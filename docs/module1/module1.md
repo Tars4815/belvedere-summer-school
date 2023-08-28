@@ -1,6 +1,6 @@
 # Introduction
 
-The module 1 introduce the Belvedere Glacier, the Summer .
+The module 1 introduce the Belvedere Glacier.
 
 ## Table of contents
 
