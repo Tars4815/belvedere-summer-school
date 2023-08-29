@@ -33,14 +33,14 @@ repo_url: https://github.com/Tars4815/belvedere-summer-school
 
 plugins:
   - search
-  - i18n:
-      languages:
-        it: "Italiano"
-        en: "English"
-      default_language: 'en'
-      no_translation:
-        it: "Questa pagina non è tradotta in italiano."
-        en: "This page isn't translated to English."
+  # - i18n:
+  #     languages:
+  #       it: "Italiano"
+  #       en: "English"
+  #     default_language: 'en'
+  #     no_translation:
+  #       it: "Questa pagina non è tradotta in italiano."
+  #       en: "This page isn't translated to English."
 
 markdown_extensions:
   - attr_list
