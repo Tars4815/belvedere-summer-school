@@ -84,67 +84,64 @@ The presented procedures represent the most rigorous way to import data in QGIS.
 
 You could try this by using the drag&drop procedure for loading the *gcp_2023.csv* that will be used later for analysis and calculation.
 
-## Layer management
+## Layers management
 
-[...]
+In the **Layers** section of the QGIS Graphical User Interface you could manage the visibility and appearance of data layers. For example, by unchecking the box close to the symbol of a given data layer, you can temporarily hide the geometries belonging to it. This operation can be particularly useful when you are doing specific analysis on  other layers and you want to evaluate better their graphic result representation on the map canvas.
+
+Instead, if you'd like to remove from the project a specific layer, you should right click on it and select the **Remove layer..** option. In this case, the layer data are definitively removed from the project and can be evaluated only by reuploading the layer through one of the import procedure previously explained. It is important to note that the removed layer are removed only from the QGIS project and they are not deleted also from their corresponding path folder in your device.
 
 ## Layer properties
 
-To change the properties of the shapefile, right-click on the layer and select properties.
+General information on each layer loaded in a QGIS project can be accessed through the **Properties** panel. It is recommended to check this information everytime a new layer is added to the page: it helps understanding the source and nature of data as well as if any interpretation issue has affected the layer loading.
 
-* **Information**:
+To view the properties of the shapefile, right-click on the layer and select **Properties...**. The newly appeared window contains different tabs. In the next sections some of the most useful for routine procedures will be explained in details.
 
-* **Source**:
+### Information
 
-* **Symbology**:
+This read-only tab summarizes the main information and metadata of the chosen layer. In particular it includes information about the file path, name, geometry type, geographical extension, total number of objects, reference system, measurement unit, attribute fields...
 
-* **Labels**:
+In this section it is always important to check the order of magnitude of the number in the *Information from provider* - *Extent* field as a double check on the coordinate values matching the expected order for the assigned reference system.
 
-* **Masks**:
+![Information tab of the vector properties window](../assets/img/module4/vector-properties-information.png "Information tab of the vector properties window")
 
-* **3D View**:
+### Symbology
 
-* **Diagrams**:
+The layer visual representation in the map canvas can be modified as preferred in the **Symbology** tab. Different type of representation can be chosen from the dropdown menu on top of the window.
 
-* **Fields**:
+#### Single symbol
 
-* **Attributes Form**:
+After selecting **Single symbol** from the dropdown menu, you access the menu for defining the style for the symbol associated to each object inside the chosen layer. This modality represents all data in the same way. In the options it possible to change color, level of opacity, size, and type of the symbol. Advanced edits (symbol fill, stroke etc) to the style could be done by clicking on *Simple Marker**.
 
-* **Joins**:
+![Single symbol style definition](../assets/img/module4/vector-properties-symbology-single-symbol.png "Single symbol style definition")
 
-* **Auxiliary Storage**:
+#### Categorised
 
-* **Actions**:
+The **Categorized** style option allows to represent data according to the values contained in a chosen layer field. This modality is suggested when the values contained in a field consists of a set of recurring values. In order to apply it, click on the arrow on the value field and select the field with the category and then click on **Classify**. After exploring the values present in the chosen attribute column inside the layer, QGIS automatically suggest a categorisation with given values and legend descriptions. Such combination can always be modified by clicking on each symbol for styling, or double-clicking on value or legend field for manually typing the values and descriptions.
 
-* **Display**:
+For the case of 2022 GCP points, select the *type* field as the classification values and style accordingly. This will help identifying more intuitively fixed or moving points on the map canvas.
 
-* others...
+![Categorised symbol style definition](../assets/img/module4/vector-properties-symbology-categorised.png "Categorised symbol style definition")
+
+#### Graduated
+
+The **Graduated** style option allows to represent data according to the values of a continuous scale contained in a chosen layer field. This modality is suggested when the values contained in a field consists of a set of unique values along a continuous scale. In order to apply it, click on the arrow on the value field and select the field with the category and then click on **Classify**. After exploring the values present in the chosen attribute column inside the layer, QGIS automatically suggest a classification with given values and legend descriptions. Such combination of class can always be modified by clicking on each symbol for styling, or double-clicking on value or legend field for manually typing the values and descriptions. Color ramp for the color method classification che be defined as preferred.
+
+When representing vector data with this method, it is important to pay attention to the mode of classification that by default is *Equal Count (Quantile)*. Everytime classification symbology is chosen, first check the **Histogram** tab, click **Load values** and evaluate the numeric distribution of the values in the vector layer. Then, in the **Classes** tab, select the more appropriate mode and number of classes.
+Everytime an option is changes, it is needed to click **Classify** for making an edit effective.
+
+For the case of 2022 GCP points, select the *height* field as the classification values and style accordingly. This will help understanding the topology of the study site.
+
+![Classified symbol style definition](../assets/img/module4/vector-properties-symbology-classified.png "Classified symbol style definition")
 
 
 [...]
 
-### Style and symbology
-
-[...]
-
-**Single symbol display**
-
-[IMG]
-
-It is also possible to set the transparency of the layer, which can be useful if you want to superimpose it on another information layer, e.g. an orthophoto.
 
 In order to better identify the municipalities, it is also possible to insert labels for each geometric unit: click on ***Labels*** → select ***Single Labels*** and choose which **Value** to display.
 
 [IMG]
 
 
-Display with **symbol categorized** according to the values contained in a layer field.
-
-[IMG]]
-
-The use of this style also makes it possible to assign to each value a label to be included in the legend. This makes the meaning of the chosen field and its values even clearer and more comprehensible.
-
-[IMG]]
 
 ## Attribute table
 
