@@ -1,6 +1,25 @@
 # Vector data
 
-[...]
+**Vector data** are widely used in GIS environment for the representation of information of discrete objects. Vector model features are particularly useful for representing and storing discrete objects such as buildings, roads, particles, etc.
+
+They usually consist of two components:
+
+1. **geometry**
+2. **thematic component**
+
+The geometry of each single vector object is defined by one single node or a set of interconnected vertices. Each of such vertices is located in the vector data reference system using a set of **x** and **y**. For 2.5D vector data the **z** coordinate values are also present to represent variables such as height, depth or other.
+
+Hence, the vector model can represent geographical entities through the following geometries:
+
+* **Points**: single set of x, y and z values;
+* **Lines**: ordered set of points whose starting node is different from the last one;
+* **Polygons**: ordered set of points whose starting node is coincident with the ending one.
+
+![Vector model primitives](../assets/img/module4/vector-model-primitive.png "Vector model primitives")
+
+Each vector object in addition to its geometry has a set of thematic information associated to it, the so called **attributes**. Attributes of a vector object usually describe its meaning, properties and/or characteristics in the real world that it represent schematically in a GIS environment.
+
+One or multiple vector objects are stored in **layers**. Objects of a GIS layer have the same geometry type and the same set of attributes.
 
 ## Loading data
 
