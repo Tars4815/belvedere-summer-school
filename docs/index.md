@@ -14,8 +14,10 @@ Learning resources from the 10th edition of the Summer School "***Design and Imp
 
 5. **[Module 4](module4/module4.md)**: this module gives an introduction to GIS and spatial data analysis.
 
-6. **[Belvedere Open Data](data.md)**: this module describes the open data collected during the summer school.
+6. **[Module 5](module4/module5.md)**: this modules gives an introduction on the stereo processing from fixed-time-lapse cameras.
 
-7. **[Software](software.md)**: this module describes the software used during the summer school.
+8. **[Belvedere Open Data](data.md)**: this module describes the open data collected during the summer school.
 
-8. **[References](references.md)**: this module provides a list of references used during the summer school.
+9. **[Software](software.md)**: this module describes the software used during the summer school.
+
+10. **[References](references.md)**: this module provides a list of references used during the summer school.

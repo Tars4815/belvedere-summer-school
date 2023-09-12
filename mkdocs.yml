@@ -33,6 +33,7 @@ repo_url: https://github.com/Tars4815/belvedere-summer-school
 
 plugins:
   - search
+  - mkdocs-jupyter
   # - i18n:
   #     languages:
   #       it: "Italiano"
@@ -58,7 +59,10 @@ nav:
     - module4/vector.md
     - module4/raster.md
     - module4/layout.md  
-  - Module 5: module5/module5.md
+  - Module 5: 
+    - 'Overview': 'module5/module5.md'
+    - 'Introduction': 'module5/intro.md'
+    - 'Feature matching': 'module5/matching.ipynb'
   - Belvedere Open Data: data.md
   - Software: software.md
   - Credits: credits.md
