@@ -213,24 +213,3 @@ represent a quantity whose value is a function of position and can be measured a
 
 ![Raster model](../assets/img/module4/raster-model.png "Raster model")
 
-**Vector** model: information on discrete objects is coded and stored as a set of x, y, z coordinates.
-
-The vector model indicates a representation of geographical entities through:
-
-* **Points**
-* **Lines**
-* **Polygons**
-
-Vector model features are particularly useful for representing and storing discrete objects such as buildings, roads, particles, etc.
-
-**In the vector model, information on discrete objects is coded and stored as a set of x,y,z coordinates.**
-
-![Vector model primitives](../assets/img/module4/vector-model-primitive.png "Vector model primitives")
-
-**Raster** model: information on continuous objects, are coded using a set of grid cells, each with its relative value 
-
-Values are cells of a grid with certain extensions and a certain resolution. 
-
-![Raster model primitives](../assets/img/module4/raster-model-primitive.png "Raster model primitives")
-
-[...]
