@@ -159,7 +159,15 @@ In the newly appeared window, select the desired output file format ad the file 
 
 ## Joins
 
-[...]
+In routine operation in the GIS environment, it is sometimes useful to link information contained in a table layer to another layer with a spatial component. For instance, for project example it is useful to link the GCP coordinate measurements from 2023 to the one of 2022 in order to compute their differences as well as the velocity.
+
+In order to do so, in the layer properties of the *gcp_2022* shapefile, go to the **Joins** tab and click on green plus symbol. In the new window it is necessary to define the parameters that allow the correct execution of the join between the *gcp_2022* georeferenced layer and the *gcp_2023* table that contains the 2023 coordinate measurements. In order to do so it is necessary to identify a common field the univocally identify a record inside a table. In this case, it is the *id* field that is present in both layers. Hence, it is needed to select it in both *Join field* and *Target field* options. In order to make possible the execution of calculation on all the field of the resulting joined attribute table, check the *Editable join layer* box and then click *Ok* and *Apply* in the main properties Join tab.
+
+![Vector join settings definition](../assets/img/module4/vector-properties-join-settings.png "Vector join settings definition")
+
+As a result, when opening the attribute table of *gcp_2022* also contains the attribute columns regarding the 2023 points.
+
+![Vector join attribute table](../assets/img/module4/vector-join-attribute-table.png "Vector join attribute table")
 
 ## Editing mode
 
