@@ -133,23 +133,29 @@ For the case of 2022 GCP points, select the *height* field as the classification
 
 ![Classified symbol style definition](../assets/img/module4/vector-properties-symbology-classified.png "Classified symbol style definition")
 
+### Labels
 
-[...]
+In order to better identify the different objects of a given layer, it is also possible to insert labels containg values associated to the corresponding object on the map. For example, it is possible to show on the map canvas the label of the ID value associated to each GCP. In order to do so, click on ***Labels*** → select ***Single Labels*** and choose which **Value** to display, in this case id.
 
+Additional optional styling for the labels can be done by changing the options of the different section below the Text Sample box.
 
-In order to better identify the municipalities, it is also possible to insert labels for each geometric unit: click on ***Labels*** → select ***Single Labels*** and choose which **Value** to display.
-
-[IMG]
-
-
+![Labels style definition](../assets/img/module4/vector-properties-labels.png "Labels style definition")
 
 ## Attribute table
 
-[...]
+The so-called **attribute table** associated to each layer loaded in our QGIS project contains all the thematic information associated to the single objects. Each row of it represents a different object (*feature*) while each column represents an attribute. Such structure is essential to manage the infoormation linked to the object on the project, as well as to select or query them efficiently.
 
-To delete municipalities that are not part of the province of PC, right-click on the layer in the (Layer panel) → click on ***Open Attribute Table***.
+To access the attribute table view, simply right click on the layer of interest and click on ***Open Attribute Table***.
 
-[IMG]
+![Vector Attribute Table](../assets/img/module4/vector-attribute-table.png "Vector Attribute Table")
+
+## Save a layer
+
+During the various processing operations executed in a GIS environment, it is often very useful to save in new layers intermediate products as well as final outputs. In order to save a modified layer already loaded in a project, right-click on it and select ***Export*** > ***Save Features as***.
+
+![Vector export as a shapefile](../assets/img/module4/vector-attribute-table.png "Vector export as a shapefile")
+
+In the newly appeared window, select the desired output file format ad the file name path where you'd like to save your new layer. Then click okay for finalising the operation. Try to do this operation with the *gcp_2022* layer (originally available only as csv) and save it as a shapefile.
 
 ## Joins
 
