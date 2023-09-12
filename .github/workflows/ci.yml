@@ -21,4 +21,5 @@ jobs:
       - run: pip install mkdocs
       - run: pip install mkdocs-material
       - run: pip install mkdocs-static-i18n
+      - run: pip install mkdocs-jupyter
       - run: mkdocs gh-deploy --force
