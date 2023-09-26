@@ -153,7 +153,7 @@ To access the attribute table view, simply right click on the layer of interest 
 
 During the various processing operations executed in a GIS environment, it is often very useful to save in new layers intermediate products as well as final outputs. In order to save a modified layer already loaded in a project, right-click on it and select ***Export*** > ***Save Features as***.
 
-![Vector export as a shapefile](../assets/img/module4/vector-attribute-table.png "Vector export as a shapefile")
+![Vector export as a shapefile](../assets/img/module4/vector-export-save-as.png "Vector export as a shapefile")
 
 In the newly appeared window, select the desired output file format ad the file name path where you'd like to save your new layer. Then click okay for finalising the operation. Try to do this operation with the *gcp_2022* layer (originally available only as csv) and save it as a shapefile.
 
@@ -170,6 +170,9 @@ As a result, when opening the attribute table of *gcp_2022* also contains the at
 ![Vector join attribute table](../assets/img/module4/vector-join-attribute-table.png "Vector join attribute table")
 
 ## Editing mode
+
+The Attribute Table with its tools represents a powerful instrument in the QGIS environment. Not only it allows to navigate through the data and select them but it enable the possibility to make calculations using attribute values and create new calculated field. In order to do so, it is necessary to activate the **Editing mode** by clicking on the yellow pencil icon on the top left of the Attribute Table. Then, let's calculate the coordinate differences between the 2 years using the **Field Calculator**. This tool can be accessed by clicking on the abacus symbol. In the new window, let's define the requested parameters and formula:
+
 
 [...]
 
