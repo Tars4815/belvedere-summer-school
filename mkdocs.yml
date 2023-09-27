@@ -51,7 +51,11 @@ nav:
   - Home: index.md
   - Introduction: introduction.md
   - Module 1: module1/module1.md
-  - Module 2: module2/module2.md
+  - Module 2: 
+    - module2/module2.md
+    - module2/intro.md
+    - module2/intro-metashape.md
+    - module2/workflow-metashape.md
   - Module 3: module3/module3.md
   - Module 4:
     - module4/module4.md
