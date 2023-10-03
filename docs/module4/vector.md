@@ -171,52 +171,35 @@ As a result, when opening the attribute table of *gcp_2022* also contains the at
 
 ## Editing mode
 
-The Attribute Table with its tools represents a powerful instrument in the QGIS environment. Not only it allows to navigate through the data and select them but it enable the possibility to make calculations using attribute values and create new calculated field. In order to do so, it is necessary to activate the **Editing mode** by clicking on the yellow pencil icon on the top left of the Attribute Table. Then, let's calculate the coordinate differences between the 2 years using the **Field Calculator**. This tool can be accessed by clicking on the abacus symbol. In the new window, let's define the requested parameters and formula:
+The **Attribute Table** with its tools represents a powerful instrument in the QGIS environment. Not only it allows to navigate through the data and select them but it enable the possibility to make calculations using attribute values and create new calculated field. In order to do so, it is necessary to activate the **Editing mode** by clicking on the yellow pencil icon on the top left of the Attribute Table. Then, let's calculate the coordinate differences between the 2 years using the **Field Calculator**.
 
+This tool can be accessed by clicking on the abacus symbol. In this case, we would like to create a nnew field in the layer's attribute table that will contain the value of the differences between 2023 height and 2022 one. Hence, it is needed to check the box for *Create new field*. Then, define the *Output field name* and its *type* (in this case, decimal), as well as the *field length* and *precision* (number of decimal digits). Finally, in the white *Expression* box, insert the formula to calculate the desired output. If layer fields are used as variable in it, it is possible to select the needed one(s) by double clicking them from the *Fields and Values* list on the right. To finalise the operation, click on *OK*.
 
-[...]
+![Example of field calculator](../assets/img/module4/vector-attribute-table-field-calculator.png "Example of field calculator")
 
-Click ***Toggle editing mode*** (1) → select the row associated to the municipality to be removed (it will be highlighted in light blue) (2) → click ***Delete selected features*** (3).
+Repeat the same operation for the calculation of the differences of East and North coordinates between 2023 and 2022. In the end, the attribute table should look similar to the one depicted below.
 
-The removal of the selected record(s) will be completed only after clicking ***Save edits*** (4) and exiting the editing mode by clicking one more time ***Toggle editing mode*** (5).
+![Example of field calculator results](../assets/img/module4/vector-attribute-table-field-calculator-results.png "Example of field calculator results")
 
-[IMG]
-
-[...]]
-
-[IMG]
+Once completed the operations, click on the floppy icon ***Save edits*** and eventually exit the editing mode by clicking one more time on the yellow pencil icon ***Toggle editing mode*** on the attribute table.
 
 ### Adding a new field
 
-[...]
+While the editing mode is activated on a given layer, it is also possible to add a new field to the attribute table. This is possible by clicking on the ***New field*** button.
 
-***Right click on the layer→ Open Attribute Table→ Toggle editing mode→ New field***
+![Attribute table new field button](../assets/img/module4/vector-attribute-table-new-field.png "Attribute table new field button")
 
-Define the required fields, paying particular attention to the **type of value** that will be entered in the new field (integer, decimal, text, date, etc.) and the **maximum number** of characters.
+In the newly appeared window, it is required to define some options, paying particular attention to the **type of value** that will be entered in the new field (integer, decimal, text, date, etc.) and the **maximum number** of characters. Let's add for example a field that allows users to enter note for particular observation on given points.
+
+![Attribute table new field options](../assets/img/module4/vector-attribute-table-new-field-options.png "Attribute table new field options")
 
 To finalise the changes introduced on the attribute table, save and end the editing session.
 
-### Field calculator
-
-***Right click on the layer→ Open Attribute Table→ Toggle editing mode→ Open field calculator***
-
-[IMG]
-
-Using the **field calculator** it is possible to create a new field containing the result of a pre-defined function or update with the results an existing field.
-
-The unit of measurement of the result is defined by the reference system of the layer (in this case meters).
-
-[IMG]
-
-To finalize changes, save and end the editing session.
-
 ### Delete field
 
-***Right click on the layer→ Open Attribute Table→ Toggle editing mode→ Delete field***
+While the editing mode is activated on a given layer, it is also possible to add a new field to the attribute table. This is possible by clicking on the ***Delete field*** button. After that, the user is required to select one or more field to be removed from the attribute table.
 
-[IMG]
-
-Select the field of interest and confirm the removal.
+![Attribute table delete field button](../assets/img/module4/vector-attribute-table-delete-field.png "Attribute table delete field button")
 
 To finalize changes, save and end the editing session.
 
