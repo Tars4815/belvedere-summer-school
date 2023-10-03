@@ -240,4 +240,18 @@ Open again the Select features by expression window and try to select the record
 
 ### Select by location
 
-[...]
+Similarly to the *Select by expression* operation, the ***Selection by location*** function allows to filter and identify records based on the spatial relationship between each feature and the features in an additional layer.
+
+For instance, let's try to identify GCPs loacted within the Belvedere glacier perimeter. To do so, click ***Vector > Research Tools > Select by Location...***.
+
+Specify that you desired to select features from the *gcp_2022* layer by comparing features that **are within** the *belvedere_perimeter* layer. Then, click *Run*.
+
+![Select by location](../assets/img/module4/vector-select-by-location.png "Select by location").
+
+The result on the map canvas should be similar to the one depicted below, with GCPs inside the glacier polygon highlighted in yellow.
+
+![Select by location on the map canvas](../assets/img/module4/vector-select-by-location-map.png "Select by location on the map canvas").
+
+Are you interested instead on the GCPs located outside the polygon? You can use a simple selection shortcut button named ***Invert features selection***.
+
+![Invert features selection options](../assets/img/module4/vector-invert-features-selection-options.png "Invert features selection options").
