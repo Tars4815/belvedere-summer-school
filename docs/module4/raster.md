@@ -76,6 +76,8 @@ The layer visual representation in the map canvas can be modified as preferred i
 
 The **singleband gray** is the default view of raster data when they are loaded on QGIS. It consists in representing them with just one color gradient that goes from black, for lower values, to white, for higher ones.
 
+![Singleband gray symbology for raster data in QGIS](../assets/img/module4/raster-symbology-singleband-gray.png "Singleband gray symbology for raster data in QGIS")
+
 #### Singleband pseudocolor
 
 The **singleband-pseudocolor** render type, as the **singleband-gray**, is suitable for showing quantitative information. It allows to choose a color ramp and also (choosing for Mode: *Equal Interval* or *Quantile*) a number of classes there to categorize the different intervals of values to be represented. Choosing for Mode:*Continuous* the number of classes cannot be manually set.
