@@ -1,4 +1,4 @@
-# Introduction to stereo processing
+# Introduction
 
 To get started with the stereo processing, you need to install the ICEpy4D library and the Metashape Python API.
 

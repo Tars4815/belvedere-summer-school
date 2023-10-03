@@ -1,8 +1,8 @@
 # Data
 
-## Introduction
+The Belvedere dataset contains extensive, long-term monitoring data on the Belvedere Glacier, a debris-covered glacier located on the east face of Monte Rosa in the Anzasca Valley of the Italian Alps. The data can be accessed from the Zenodo repository [https://zenodo.org/record/7842348](https://zenodo.org/record/7842348)
 
-This dataset contains extensive, long-term monitoring data on the Belvedere Glacier, a debris-covered glacier located on the east face of Monte Rosa in the Anzasca Valley of the Italian Alps. The data is derived from photogrammetric 3D reconstruction of the full Belvedere Glacier and includes:
+The data is derived from photogrammetric 3D reconstruction of the full Belvedere Glacier and includes:
 
 * dense point clouds obtained with Structure-from-Motion (SfM) covering the entire glacier body
 * high-resolution orthophotos
