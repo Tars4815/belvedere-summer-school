@@ -49,7 +49,7 @@ The **Data source manager** window represent the main place in QGIS for uploadin
 
 The loaded vector layer will also appear in the QGIS layer section with its name close to the colour with which it is represented on the map canvas.
 
-The chosen file is a shapefile, a widely adopted format for vector data that indicates a group of files with the same file name but with different extensions:
+The chosen file is a **shapefile**, a widely adopted format for vector data that indicates a group of files with the same file name but with different extensions:
 
 - *.shp* referring to the vector geometry;
 - *.shx* containing the positional index of the vector geometry and allowing flexible and efficient ordered object search inside the layer;

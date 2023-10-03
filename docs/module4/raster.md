@@ -22,4 +22,50 @@ In the following guided tutorial you will learn how to load raster data in the Q
 
 ## Loading data
 
+In the data folder you just downloaded, you can find 7 different files referring to 3 distinct raster data layers.
+
+In particular:
+
+1. All files named [*2022_ortofoto_20cm*](INSERIRE LINK A FILE IN REPOSITORY) refers to the orthophoto of the glacier area of interest in a tiff format, as surveyed with UAVs inn 2022. The meaning and role of the different file extensions will be explained in the next steps.
+
+2. [*2021_dem_20cm*](INSERIRE LINK A FILE IN REPOSITORY) is the digital elevation model produced at the end of the 2021 survey campaign.
+
+3. [*2022_dem_20cm*](INSERIRE LINK A FILE IN REPOSITORY) is the digital elevation model produced at the end of the 2022 survey campaign.
+
+For adding a new raster data layer to a QGIS project, click from the menu bar:
+
+***Layer > Data source manager***
+
+### TIF import
+
+Similarly to the import procedure for vector data, select the **Raster** tab and in the **Source** section, by clicking the **Browser** (...) icon, look for the *2022_ortofoto_20cm.tiff* file on your laptop. After selecting it, click **Add**. Hence, close the Data source manager window and check that the orthophoto of the Belvedere glacier area is correctly visible on the map canvas view.
+
+![Data Source Manager window in QGIS](../assets/img/module4/raster-data-source-manager.png "Data Source Manager window in QGIS")
+
+![Map canvas view of the Belvedere glacier orthophoto](../assets/img/module4/raster-orthophoto-loaded.png "Map canvas view of the Belvedere glacier orthophoto")
+
+The loaded vector layer will also appear in the QGIS layer section with its name close to a checkboard icon, symbolizing that such data is a raster.
+
+The chosen file is a **Tag Image File** (TIF), a widely adopted format for raster data in GIS environments. Usually, the main file with .tif extension is accompained by another file with the same name and the .tfw extension. Such file saved in plain text format contains information on the georeferencing of the reaster itself. Indeed, they store information on the X and Y pixel size, rotation as well as the global coordinates for the top-left corner of the raster.
+
+### Drag & drop import
+
+Exactly like the case of shapefile import, raster files can be imported in QGIS project with the drag&drop shortcut. Try to execute this operation with the DEM rasters: *2021_dem_20cm.tif* and *2022_dem_20cm.tif*.
+
+The expected map canvas view for each DEM is the one depicted below in grayscale.
+
+![Map canvas view of the Belvedere glacier digital elevation model](../assets/img/module4/raster-dem-loaded.png "Map canvas view of the Belvedere glacier digital elevation model")
+
+## Layer properties
+
+General information on each layer loaded in a QGIS project can be accessed through the **Properties** panel. As suggested for vector files, it is recommended to check this information everytime a new layer is added to the page: it helps understanding the source and nature of data as well as if any interpretation issue has affected the layer loading.
+
+To view the properties of the raster, right-click on the layer and select **Properties...**. The newly appeared window contains different tabs. In the next sections some of the most useful for routine procedures will be explained in details foor the case of raster.
+
+### Information
+
+[...]
+
+![Map canvas view of the Belvedere glacier digital elevation model](../assets/img/module4/raster-properties-information.png "Map canvas view of the Belvedere glacier digital elevation model")
+
 [...]
