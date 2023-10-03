@@ -133,29 +133,46 @@ For the case of 2022 GCP points, select the *height* field as the classification
 
 ![Classified symbol style definition](../assets/img/module4/vector-properties-symbology-classified.png "Classified symbol style definition")
 
+### Labels
 
-[...]
+In order to better identify the different objects of a given layer, it is also possible to insert labels containg values associated to the corresponding object on the map. For example, it is possible to show on the map canvas the label of the ID value associated to each GCP. In order to do so, click on ***Labels*** → select ***Single Labels*** and choose which **Value** to display, in this case id.
 
+Additional optional styling for the labels can be done by changing the options of the different section below the Text Sample box.
 
-In order to better identify the municipalities, it is also possible to insert labels for each geometric unit: click on ***Labels*** → select ***Single Labels*** and choose which **Value** to display.
-
-[IMG]
-
-
+![Labels style definition](../assets/img/module4/vector-properties-labels.png "Labels style definition")
 
 ## Attribute table
 
-[...]
+The so-called **attribute table** associated to each layer loaded in our QGIS project contains all the thematic information associated to the single objects. Each row of it represents a different object (*feature*) while each column represents an attribute. Such structure is essential to manage the infoormation linked to the object on the project, as well as to select or query them efficiently.
 
-To delete municipalities that are not part of the province of PC, right-click on the layer in the (Layer panel) → click on ***Open Attribute Table***.
+To access the attribute table view, simply right click on the layer of interest and click on ***Open Attribute Table***.
 
-[IMG]
+![Vector Attribute Table](../assets/img/module4/vector-attribute-table.png "Vector Attribute Table")
+
+## Save a layer
+
+During the various processing operations executed in a GIS environment, it is often very useful to save in new layers intermediate products as well as final outputs. In order to save a modified layer already loaded in a project, right-click on it and select ***Export*** > ***Save Features as***.
+
+![Vector export as a shapefile](../assets/img/module4/vector-export-save-as.png "Vector export as a shapefile")
+
+In the newly appeared window, select the desired output file format ad the file name path where you'd like to save your new layer. Then click okay for finalising the operation. Try to do this operation with the *gcp_2022* layer (originally available only as csv) and save it as a shapefile.
 
 ## Joins
 
-[...]
+In routine operation in the GIS environment, it is sometimes useful to link information contained in a table layer to another layer with a spatial component. For instance, for project example it is useful to link the GCP coordinate measurements from 2023 to the one of 2022 in order to compute their differences as well as the velocity.
+
+In order to do so, in the layer properties of the *gcp_2022* shapefile, go to the **Joins** tab and click on green plus symbol. In the new window it is necessary to define the parameters that allow the correct execution of the join between the *gcp_2022* georeferenced layer and the *gcp_2023* table that contains the 2023 coordinate measurements. In order to do so it is necessary to identify a common field the univocally identify a record inside a table. In this case, it is the *id* field that is present in both layers. Hence, it is needed to select it in both *Join field* and *Target field* options. In order to make possible the execution of calculation on all the field of the resulting joined attribute table, check the *Editable join layer* box and then click *Ok* and *Apply* in the main properties Join tab.
+
+![Vector join settings definition](../assets/img/module4/vector-properties-join-settings.png "Vector join settings definition")
+
+As a result, when opening the attribute table of *gcp_2022* also contains the attribute columns regarding the 2023 points.
+
+![Vector join attribute table](../assets/img/module4/vector-join-attribute-table.png "Vector join attribute table")
 
 ## Editing mode
+
+The Attribute Table with its tools represents a powerful instrument in the QGIS environment. Not only it allows to navigate through the data and select them but it enable the possibility to make calculations using attribute values and create new calculated field. In order to do so, it is necessary to activate the **Editing mode** by clicking on the yellow pencil icon on the top left of the Attribute Table. Then, let's calculate the coordinate differences between the 2 years using the **Field Calculator**. This tool can be accessed by clicking on the abacus symbol. In the new window, let's define the requested parameters and formula:
+
 
 [...]
 
