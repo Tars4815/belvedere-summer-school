@@ -63,8 +63,8 @@ nav:
     - 'Overview': 'module5/module5.md'
     - 'Introduction': 'module5/intro.md'
     - 'Feature matching': 'module5/matching.ipynb'
+    - 'Stereo reconstruction': 'module5/single_epoch_stereo_reconstruction.ipynb'
   - Belvedere Open Data: data.md
-  - Software: software.md
   - Credits: credits.md
   - References: references.md
 
