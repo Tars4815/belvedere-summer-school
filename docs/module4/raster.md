@@ -64,8 +64,24 @@ To view the properties of the raster, right-click on the layer and select **Prop
 
 ### Information
 
-[...]
+This read-only tab summarizes the main information and metadata of the chosen layer. In the case of raster layer it is important to mention, in addition to info field in common with vector data, the information about number of band, band statistics, grid dimensions and pixel size giving important information on the spatial resolution of the raster itself.
 
 ![Map canvas view of the Belvedere glacier digital elevation model](../assets/img/module4/raster-properties-information.png "Map canvas view of the Belvedere glacier digital elevation model")
+
+### Symbology
+
+The layer visual representation in the map canvas can be modified as preferred in the **Symbology** tab. Different type of representation can be chosen from the dropdown menu on top of the window and differs from the vector data ones.
+
+#### Singleband gray
+
+The **singleband gray** is the default view of raster data when they are loaded on QGIS. It consists in representing them with just one color gradient that goes from black, for lower values, to white, for higher ones.
+
+#### Singleband pseudocolor
+
+The **singleband-pseudocolor** render type, as the **singleband-gray**, is suitable for showing quantitative information. It allows to choose a color ramp and also (choosing for Mode: *Equal Interval* or *Quantile*) a number of classes there to categorize the different intervals of values to be represented. Choosing for Mode:*Continuous* the number of classes cannot be manually set.
+
+![Singleband pseudocolor symbology for raster data in QGIS](../assets/img/module4/raster-symbology-singleband-pseudocolor.png "Singleband pseudocolor symbology for raster data in QGIS")
+
+![Raster data with singleband pseudocolor symbology on the map canvas](../assets/img/module4/raster-symbology-singleband-pseudocolor-map-canvas.png "Raster data with singleband pseudocolor symbology on the map canvas")
 
 [...]
