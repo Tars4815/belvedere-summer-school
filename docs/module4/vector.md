@@ -205,11 +205,38 @@ To finalize changes, save and end the editing session.
 
 ## Selection operations
 
-[...]
+One of the most common operations executed in a GIS environment is represented by the **select/query** function. This allow to filter and identify data on given layers depending on specific criteria. The two main types of selection operation in QGIS are:
+
+* Select **by expression**
+* Select **by location**
 
 ### Select by expression
 
-[...]
+Selecting by expression in QGIS means using a set of rules or conditions to select a subset of features from a layer based on the attribute data or geometry of the features.
+
+Let's try identify the GCPs that are considered as Fixed point. Such information, for example, is given by the attribute *type*, where the F value stands for "Fixed" while "M" for "Moving". Hence, in order to highlight the points of interest, it is needed to filter the ones satisfying the criteria (also called *expression*): *type = F*.
+
+To perform this operation, open the attribute table of *gcp_2022* and click on the *Select features using an expression button*.
+
+![Select features using an expression button](../assets/img/module4/vector-attribute-table-select-by-expression-button.png "Select features using an expression button")
+
+In the new window, insert the expression formulated before for the selection of fixed points. Pay attention to the syntax for field names and values. Then click ***Select Features*** to run the procedure.
+
+![Select features using an expression example](../assets/img/module4/vector-attribute-table-select-by-expression.png "Select features using an expression example")
+
+As a result, you will see that a certain number of rows in the attribute table is highlighted in blue: those are the records in the layer that satisfy the criteria defined with the expression. The exact number of rows selected is indicated on the header of the attribute table header (in this case, 11).
+
+![Selected features inside the attribute table](../assets/img/module4/vector-select-by-expression-fixed.png "Selected features inside the attribute table")
+
+Such operation can be executed with any type of field, also using different operations according to the attribute type (string, numeric etc.).
+
+Let's clear the current selection (clicking ***Deselect all features from the layer*** button) and get ready for executing another simple query.
+
+![Deselect all features from the layer button](../assets/img/module4/vector-deselect-features-button.png "Deselect all features from the layer button")
+
+Open again the Select features by expression window and try to select the records that are characterised by a difference on the height values greater than 1 meter.
+
+![Select by expression height differences](../assets/img/module4/vector-select-by-expression-height.png "Select by expression height differences")
 
 ### Select by location
 
