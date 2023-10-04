@@ -64,7 +64,7 @@ To view the properties of the raster, right-click on the layer and select **Prop
 
 ### Information
 
-This read-only tab summarizes the main information and metadata of the chosen layer. In the case of raster layer it is important to mention, in addition to info field in common with vector data, the information about number of band, band statistics, grid dimensions and pixel size giving important information on the spatial resolution of the raster itself.
+This read-only tab summarizes the main information and metadata of the chosen layer. In the case of raster layer it is important to mention, in addition to info field in common with vector data, the information about number of band, band statistics, grid dimensions and pixel size giving important information on the spatial resolution of the raster itself. For example, in the case of all the rasters used in this guided exercise the spatial resolution will be equal to 20 cm, meaning that each pixel of the raster file covers a squared area of 20 x 20 centimeters.
 
 ![Map canvas view of the Belvedere glacier digital elevation model](../assets/img/module4/raster-properties-information.png "Map canvas view of the Belvedere glacier digital elevation model")
 
@@ -85,5 +85,31 @@ The **singleband-pseudocolor** render type, as the **singleband-gray**, is suita
 ![Singleband pseudocolor symbology for raster data in QGIS](../assets/img/module4/raster-symbology-singleband-pseudocolor.png "Singleband pseudocolor symbology for raster data in QGIS")
 
 ![Raster data with singleband pseudocolor symbology on the map canvas](../assets/img/module4/raster-symbology-singleband-pseudocolor-map-canvas.png "Raster data with singleband pseudocolor symbology on the map canvas")
+
+### Raster projectionn
+
+Checking the information table in the raster layers properties it is possible to notice that they're inserted in a reference system that is different from the one adopted for the QGIS project. Hence, it is necessary to execute a reprojection of the layers in the desired reference system (EPSG: 32632 - WGS84 UTM Zone 32 N).
+
+In order to do so, access the menu ***Raster > Projections > Warp (Reproject)...***.
+
+In the newly appeared window, it is required to select the layer to be reprojected, insert information on the source reference system (if available) and on the target one. By default, the adopted resampling method for the raster is the Nearest Neighbour, but it is possible to select many other options from a given list. Once all the required parameters are defined, click *Run* to perform the transformation.
+
+![Raster reprojection plugin](../assets/img/module4/raster-reprojection.png "Raster reprojection plugin")
+
+Let's repeat the operation with all the raster in order to have all of them inserted in the desired reference system.
+
+### Clip raster
+
+Before proceeding with useful analysis on the raster data of the glacier, it is necessary to clip the rasters using the Belvedere perimeter polygon. In particular, the vector file used in the previous exercise will be adopted as a mask to cut the digital elevation models. This commonly used procedure is particularly useful to define common areas of study, avoiding the influence of external data that are available only in one of the DEM.
+
+To perform this, first load again the *bbghiacciaio* vector layer and then access the menu ***Raster > Extraction > Clip raster by mask layer***.
+
+In the plugin window, select the layer you'd like to clip and the vector layer to use as mask for the operation. Then, define the input and output reference systems. Once everything is set, click *Run*. Repeat the procedure with all the given DEMs.
+
+![Clip raster by mask layer plugin](../assets/img/module4/raster-clip-by-mask-layer.png "Clip raster by mask layer plugin")
+
+The expected output in the map canvas looks similar to the one depicted in the illustration below.
+
+![Clip raster by mask layer plugin](../assets/img/module4/raster-clip-by-mask-layer-map-canvas.png "Clip raster by mask layer plugin")
 
 [...]
