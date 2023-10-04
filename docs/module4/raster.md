@@ -86,7 +86,7 @@ The **singleband-pseudocolor** render type, as the **singleband-gray**, is suita
 
 ![Raster data with singleband pseudocolor symbology on the map canvas](../assets/img/module4/raster-symbology-singleband-pseudocolor-map-canvas.png "Raster data with singleband pseudocolor symbology on the map canvas")
 
-### Raster projectionn
+### Raster projection
 
 Checking the information table in the raster layers properties it is possible to notice that they're inserted in a reference system that is different from the one adopted for the QGIS project. Hence, it is necessary to execute a reprojection of the layers in the desired reference system (EPSG: 32632 - WGS84 UTM Zone 32 N).
 
@@ -111,5 +111,23 @@ In the plugin window, select the layer you'd like to clip and the vector layer t
 The expected output in the map canvas looks similar to the one depicted in the illustration below.
 
 ![Clip raster by mask layer plugin](../assets/img/module4/raster-clip-by-mask-layer-map-canvas.png "Clip raster by mask layer plugin")
+
+### Raster calculation
+
+Finally, it is time to perform some simple calculation on the volume differences based on the glacier's DEMs computed during the 2022 and 2021 campaigns.
+
+***Raster > Raster calculator***
+
+DEMs differences
+
+![Raster calculator for DEM differences](../assets/img/module4/raster-calculator.png "Raster calculator for DEM differences")
+
+![Raster calculator result for DEM differences in the map canvas](../assets/img/module4/raster-calculator-map-canvas.png "Raster calculator result for DEM differences in the map canvas")
+
+Raster layer statistics (sum)
+
+![Raster layer statistics report for DEM differences](../assets/img/module4/raster-layer-statistics.png "Raster layer statistics report for DEM differences")
+
+sum * (cell_resolution)^2
 
 [...]
