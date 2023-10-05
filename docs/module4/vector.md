@@ -21,7 +21,7 @@ Each vector object in addition to its geometry has a set of thematic information
 
 One or multiple vector objects are stored in **layers**. Objects of a GIS layer have the same geometry type and the same set of attributes.
 
-In the following guided tutorial you will learn how to load vector data in the QGIS environment, manipulate and style layers and execute common operations such as joins and selectins. The data used for this exercise can be downloaded [here](INSERIRE LINK A RISORSE DATI MESSE IN REPOSITORY) and consists of the Belvedere glacier perimeter and GNSS measurements of Ground Control Points (GCPs) collected during the 2022 and 2023 monitoring campaigns.
+In the following guided tutorial you will learn how to load vector data in the QGIS environment, manipulate and style layers and execute common operations such as joins and selectins. The data used for this exercise can be downloaded [here](https://polimi365-my.sharepoint.com/:f:/r/personal/10462873_polimi_it/Documents/summer-school-belvedere/Mod4_gis/vector-data?csf=1&web=1&e=854doZ) and consists of the Belvedere glacier perimeter and GNSS measurements of Ground Control Points (GCPs) collected during the 2022 and 2023 monitoring campaigns.
 
 ## Loading data
 
@@ -29,11 +29,11 @@ In the data folder you just downloaded, you can find 8 different files referring
 
 In particular:
 
-1. All files named [*belvedere_perimeter*](INSERIRE LINK A FILE IN REPOSITORY) (6) refers to the representation of the glacier area of interest in a shapefile format. The meaning and role of the different file extensions will be explained in the next steps.
+1. All files named *belvedere_perimeter* (6) refers to the representation of the glacier area of interest in a shapefile format. The meaning and role of the different file extensions will be explained in the next steps.
 
-2. [*gcp_2022*](INSERIRE LINK A FILE IN REPOSITORY) is a comma-separated-values (csv) file that contains the information about the GCPs measured in the 2022 campaign.
+2. *gcp_2022* is a comma-separated-values (csv) file that contains the information about the GCPs measured in the 2022 campaign.
 
-3. [*gcp_2023*](INSERIRE LINK A FILE IN REPOSITORY) is a comma-separated-values (csv) file that contains the information about the GCPs measured in the 2023 campaign.
+3. *gcp_2023* is a comma-separated-values (csv) file that contains the information about the GCPs measured in the 2023 campaign.
 
 For adding a new vector data layer to a QGIS project, click from the menu bar:
 
