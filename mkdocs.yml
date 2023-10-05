@@ -50,7 +50,11 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Introduction: introduction.md
-  - Module 1: module1/module1.md
+  - Module 1:
+    - module1/module1.md
+    - module1/instrumental-techniques.md
+    - module1/monitoring-campaigns.md
+    - module1/monitoring-results.md
   - Module 2: 
     - module2/module2.md
     - module2/intro.md
