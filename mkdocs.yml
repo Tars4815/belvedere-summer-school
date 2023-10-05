@@ -69,9 +69,11 @@ nav:
     - module4/layout.md  
   - Module 5: 
     - 'Overview': 'module5/module5.md'
-    - 'Introduction': 'module5/intro.md'
+    - 'Getting started': 'module5/getting_started.md'
+    - 'Data preparation': 'module5/data_preparation.md'
     - 'Feature matching': 'module5/matching.ipynb'
     - 'Stereo reconstruction': 'module5/single_epoch_stereo_reconstruction.ipynb'
+    - 'Multi-epoch processing': 'module5/multi_epoch_processing.ipynb'
   - Belvedere Open Data: data.md
   - Credits: credits.md
   - References: references.md

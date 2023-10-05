@@ -32,8 +32,3 @@ In the past, several hazardous events originated by Belvedere Glacier, such as f
 
 ![Figure3](../assets/img/intro/surge2.jpg "Surge2")  
 *Figure 3: Right lateral moraine, early October 2001. Note the increase in thickness and the invasion by ice (in the foreground) of the breccia on the right moraine (effect of the Locce glacial lake rout, which occurred on July 19, 1979) (photo G. Mortara, October 2001);*
-
-## Main morphological sectors
-
-
-## References

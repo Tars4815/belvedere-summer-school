@@ -1,65 +1,77 @@
 # Getting started
 
-## Data preparation
+To get started with the stereo processing, you need to install the ICEpy4D library and the Metashape Python API.
 
-For a multi-temporal and multi-camera processing with ICEpy4D, data must be organized as follows:
+### Requirements
 
-```
-├── config.yaml    # Configuration file
-├── data/ 
-    ├── img/       # Image folder (one subfolder per camera)
-        ├── cam1/ 
-        ├── cam2/ 
-        ├── cam3/
-        ...
-    ├── calib/     # Calibration files folder (one file per camera)
-        ├── cam1.txt
-        ├── cam2.txt
-        ├── cam3.txt
-        ...
-    ├── targets/   # Target files folder (one file per image)
-        ├── img_cam1_epoch0.txt
-        ├── img_cam1_epoch1.txt
-        ├── img_cam1_epoch2.txt
-        ...
-        ├── img_cam2_epoch0.txt
-        ├── img_cam2_epoch1.txt
-        ├── img_cam2_epoch2.txt
-        ...
-        ├── img_cam3_epoch0.txt
-        ├── img_cam3_epoch1.txt
-        ├── img_cam3_epoch2.txt
-        ...        
-        ├── targets_world.txt
+- 64-bit Python `>= 3.8`
+- a NVIDIA graphic card with CUDA capability is strongly reccomended.
+
+### Install ICEpy4D
+
+Create a new Anaconda environment
+
+```bash
+conda create -n icepy4d python=3.9
+conda activate icepy4d
 ```
 
-The data directory contains all the data needed for the processing. 
-The `img` folder contains one subfolder per camera. 
-The `calib` folder contains the calibration files for each camera. 
-The `targets` folder contains the targets files. 
-Targets file are stored all together in a single folder `targets` folder.
-Each target file must be named as with the same name as the image that it belongs to, but with a textfile extension (".txt", ".csv"), and it contains the image coordinates of all the visible targets in that image.
-Each file must contain the target label and the image coordinates x and y of all the visible targets.
-For instance, the file named `img_cam1_epoch0.txt`, where `img_cam1_epoch0.jpg` is the image file, contains the following data:
+Install Icepy4D from the original repository
 
-```
-label,x,y
-F1,1501.8344,3969.0095
-F2,1003.5037,3859.1558
+```bash
+git clone https://github.com/franioli/icepy4d.git
+cd icepy4d
+pip install -e .
 ```
 
-Additionally, a file containing the world coordinates X,Y, Z of all the targets must be provided. This file should be named `targets_world.txt` and it must contain the following data:
+### Install Metashape Python API
 
+For full Bundle Adjustment and dense reconstruction of the terminal ice cliff, you need to install Agisoft Metashape Python API.
+Metashape Python API can be downloaded from [https://www.agisoft.com/downloads/installer/](https://www.agisoft.com/downloads/installer/) or use `wget` (under Linux).
+
+```bash
+wget https://s3-eu-west-1.amazonaws.com/download.agisoft.com/Metashape-1.8.5-cp35.cp36.cp37.cp38-abi3-linux_x86_64.whl
+pip install Metashape-1.8.5-cp35.cp36.cp37.cp38-abi3-linux_x86_64.whl
 ```
-label,X,Y,Z
-F1,-499.8550,402.0301,240.3745
-F2,-302.8139,442.8938,221.9927
+
+You need to have a valid Metashape license (and associated license file) to use the API and you need to activate it.
+
+The easiest way to get the license file, is by installing the Metashape Professional Edition GUI software (distinct from the Python module) and registering it following the prompts in the software (you need to purchase a license first). Once you have a license file (whether a node-locked or floating license), you need to set the agisoft_LICENSE environment variable (search onilne for instructions for your OS; look for how to permanently set it) to the path to the folder containing the license file (metashape.lic).
+
+With Linux (Ubuntu 22.04), to permanently setup agisoft_LICENSE environment variable for floating license, modify your .bashrc file:
+
+```bash
+sudo nano ~/.bashrc
 ```
-World coordinates must be in a cartesian (e.g., local) or projected (e.g., UTM) coordinate system. 
 
-The `config.yaml` file contains the configuration parameters for the processing.
+add the line (replace port and address with your values)
 
+```bash
+export agisoft_LICENSE="port"@"address"
+```
 
-Some example data can be downloaded from ....
+Then you have to execute the .bashrc file:
+```bash
+source ~/.bashrc
+```
 
-## Configuration file
+Now, you can check if the new environmental variable is present:
+
+```bash
+printenv | grep agisoft
+```
+
+If so, you are ready to go.
+
+### Test ICEp4D installation
+
+Try to import ICEpy4D package
+
+```bash
+conda activate icepy4d
+python -c "import icepy4d"
+```
+
+If no error is given, ICEpy4D is successfully installed and it can be imported within your script with `import icepy4d`
+
+You are now ready to start with the stereo processing.
