@@ -2,7 +2,7 @@
 
 ## Download the data
 
-To get started in this module, download the data from the `stereo_processing` folder in the repository of the course.
+To get started in this module, download the data from the `Mod5_stereo_processing` folder in the repository of the course.
 You can reach the data repository from the following link:
 
 [https://polimi365-my.sharepoint.com/:f:/g/personal/10462873_polimi_it/EkqPd1sQfvFOkU68BbGlbUQB31mnpaszWBH1fWg0foj_rw?e=DAXR68](https://polimi365-my.sharepoint.com/:f:/g/personal/10462873_polimi_it/EkqPd1sQfvFOkU68BbGlbUQB31mnpaszWBH1fWg0foj_rw?e=DAXR68)
