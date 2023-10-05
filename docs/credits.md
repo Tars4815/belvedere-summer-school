@@ -17,6 +17,10 @@ The teaching material of the Belvedere glacier summer school collected on this o
 
 Federica Gaspari, Francesco Ioli, Livio Pinto
 
+### Data preparation
+
+Francesco Ioli
+
 ### Writing
 
 * Module 1: Federico Barbieri
