@@ -18,7 +18,7 @@ In a GIS, each raster layer possesses pixels (cells) of a consistent size, which
 
 Images characterized by a pixel size that encompasses a limited area are referred to as **high-resolution** images, as they allow for discerning a substantial level of detail within the image. Conversely, images featuring a pixel size that encompasses a larger area are termed **low-resolution** images, as they exhibit a reduced level of detail.
 
-In the following guided tutorial you will learn how to load raster data in the QGIS environment, manipulate and style layers and execute common operations such as clip and raster calculations. The data used for this exercise can be downloaded [here](INSERIRE LINK A RISORSE DATI MESSE IN REPOSITORY) and consists of the Belvedere glacier orthophotos and digital elevation models produced during the 2021 and 2022 monitoring campaigns.
+In the following guided tutorial you will learn how to load raster data in the QGIS environment, manipulate and style layers and execute common operations such as clip and raster calculations. The data used for this exercise can be downloaded [here](https://polimi365-my.sharepoint.com/:f:/r/personal/10462873_polimi_it/Documents/summer-school-belvedere/Mod4_gis/raster-data?csf=1&web=1&e=dalgSv) and consists of the Belvedere glacier orthophotos and digital elevation models produced during the 2021 and 2022 monitoring campaigns.
 
 ## Loading data
 
@@ -26,11 +26,11 @@ In the data folder you just downloaded, you can find 7 different files referring
 
 In particular:
 
-1. All files named [*2022_ortofoto_20cm*](INSERIRE LINK A FILE IN REPOSITORY) refers to the orthophoto of the glacier area of interest in a tiff format, as surveyed with UAVs inn 2022. The meaning and role of the different file extensions will be explained in the next steps.
+1. All files named [*2022_ortofoto_20cm*] refers to the orthophoto of the glacier area of interest in a tiff format, as surveyed with UAVs inn 2022. The meaning and role of the different file extensions will be explained in the next steps.
 
-2. [*2021_dem_20cm*](INSERIRE LINK A FILE IN REPOSITORY) is the digital elevation model produced at the end of the 2021 survey campaign.
+2. [*2021_dem_20cm*] is the digital elevation model produced at the end of the 2021 survey campaign.
 
-3. [*2022_dem_20cm*](INSERIRE LINK A FILE IN REPOSITORY) is the digital elevation model produced at the end of the 2022 survey campaign.
+3. [*2022_dem_20cm*] is the digital elevation model produced at the end of the 2022 survey campaign.
 
 For adding a new raster data layer to a QGIS project, click from the menu bar:
 

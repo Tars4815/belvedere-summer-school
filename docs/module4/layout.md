@@ -63,18 +63,6 @@ Once you have pressed **Add Legend** from the *Add Item* menù or from the left 
 
 ![Modify legend properties in the QGIS layout composer](../assets/img/module4/legend-properties.png "Modify legend properties in the QGIS layout composer")
 
-## Print layout with multiple maps
-
-To print two separate maps by changing the layers and their style, you can set the appropriate functions to lock the active layers.
-
-![Definition of a layout with multiple maps in the QGIS layout composer](../assets/img/module4/multiple-maps.png "Definition of a layout with multiple maps in the QGIS layout composer")
-
-For example, insert the second map with the *Add Map* command, creating a smaller window. Then, flag *Lock layers* and *Lock styles for layers* to ensure that changes made to the other map(s) do not affect the selected map.
-
-In the map window it is also possible to set the overview of the second map by specifying the desired style.
-
-![Definition of an overview in a layout with multiple maps in the QGIS layout composer](../assets/img/module4/add-overview-layout.png "Definition of an overview in a layout with multiple maps in the QGIS layout composer")
-
 ## Save the print layout
 
 In the toolbar, click on the highlighted icons to save the composed layout as an image or PDF file.
@@ -82,5 +70,3 @@ In the toolbar, click on the highlighted icons to save the composed layout as an
 In the save window, select the desired file format.
 
 ![Save and export procedure for a print layout in the QGIS layout composer](../assets/img/module4/save-layout.png "Save and export procedure for a print layout in the QGIS layout composer")
-
-[...]
