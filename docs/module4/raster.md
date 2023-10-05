@@ -116,18 +116,26 @@ The expected output in the map canvas looks similar to the one depicted in the i
 
 Finally, it is time to perform some simple calculation on the volume differences based on the glacier's DEMs computed during the 2022 and 2021 campaigns.
 
-***Raster > Raster calculator***
+QGIS makes available a powerful tool for simple calculation on raster data, the so called **Raster Calculator**. It is accessible at the menu ***Raster > Raster calculator***.
 
-DEMs differences
+Once its window is visible, it is possible to see listed all the raster bands of the layers loaded in the QGIS project. On the right of the window, it is possible to define the desired options for the output calculated raster: file name, path, format, extension, resolution and reference system. Finally, in the lower section a series of common math operators is present alongside the Expression box where it is possible to formulate the expression for the calculation by inserting the operators as well as the needed raster bands to be used as variables (by simply double clicking on them on the Raster Bands list).
+
+To compute the height differences between 2022 and 2021, first double-click the 2022 clipped DEM and then, after inserting the subtraction symbol, double-click the 2021 clipped DEM. Then, click on the *OK* button.
 
 ![Raster calculator for DEM differences](../assets/img/module4/raster-calculator.png "Raster calculator for DEM differences")
 
+At the end of the processing, the output results in the map canvas should look similar to the one depicted in the image below.
+
 ![Raster calculator result for DEM differences in the map canvas](../assets/img/module4/raster-calculator-map-canvas.png "Raster calculator result for DEM differences in the map canvas")
 
-Raster layer statistics (sum)
+Now it is necessary to calculate the total of the differences, meaning the sum of the values stored in all the raster cells of the output file. This operation can be easily executed through a native plugin of QGIS called **Raster layer statistics** that can be accessed through the menu ***Processing > Toolbox > Raster Analysis > Raster Layer Statistics***.
+
+Select as the input layer the raster of interest, define a name for the output html report file and then click *Run*.
+
+![Raster layer statistics plugin for DEM differences](../assets/img/module4/raster-layer-statistics-plugin.png "Raster layer statistics plugin for DEM differences")
+
+At the end of the procedure, open the HTML report that will contain an overview of the descriptive statistics related to the given raster.
 
 ![Raster layer statistics report for DEM differences](../assets/img/module4/raster-layer-statistics.png "Raster layer statistics report for DEM differences")
 
-sum * (cell_resolution)^2
-
-[...]
+Once you identified the sum value for the raster, simply multiply it for the squared raster pixel resolution (pixel area) in order to obtain the total volume loss of the glacier between the 2 campaign.
