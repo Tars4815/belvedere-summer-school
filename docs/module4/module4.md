@@ -1,6 +1,6 @@
 # Overview
 
-The module 4 of the course is dedicated to **Geographic Information System** (GIS)-.
+The module 4 of the course is dedicated to **Geographic Information System** (GIS).
 
 ## Learning outcomes
 
