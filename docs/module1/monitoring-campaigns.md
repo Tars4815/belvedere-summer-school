@@ -1,6 +1,9 @@
 # Belvedere Glacier Monitoring Campaigns
 
-Starting from the year 2015, several research teams from the Alta Scuola Politecnica (ASP Politecnico di Milano and Politecnico di Torino), and from Department of Civil and Environmental Engineering (DICA, Politecnico di Milano), have annually conducted UAV surveys over the entire Belvedere glacier with the aim of creating three-dimensional models. Comparing these models would then allow for the estimation of annual changes in the glacier's surface and the surrounding terrain. Over the years, the equipment used has changed and evolved, consequently altering the methods and outcomes of the surveys. In the following paragraphs, a summary will be provided with the main characteristics of each measurement campaign.
+Starting from the year 2015, several research teams from the Alta Scuola Politecnica (ASP Politecnico di Milano and Politecnico di Torino), and from Department of Civil and Environmental Engineering (DICA, Politecnico di Milano), have annually conducted UAV surveys over the entire Belvedere glacier with the aim of creating three-dimensional models. Comparing these models would then allow for the estimation of annual changes in the glacier's surface and the surrounding terrain. 
+Over the years, the equipment used has changed and evolved, consequently altering the methods and outcomes of the surveys. In the following paragraphs, a summary will be provided with the main characteristics of each measurement campaign.
+
+A full description of the monitoring campaign carried out between 2015 and 2023 can be found in [Ioli et al. (2022)](https://doi.org/10.3390/rs14010028).
 
 ## 2015
 
@@ -102,3 +105,4 @@ The table below summarizes all UAV campaigns and their main features.
 | 2020 | July-August | Parrot Disco, DJI Phantom 4 Pro | HawkEye FireFly 8S, DJI FC6310 | Summer School DICA | 1473 | 10.5 (low area), 18.8 (high area) |
 | 2021 | July | DJI Matrice 210 | Dji Zenmuse X5 | Summer School DICA | 1473 | 9.9 |
 | 2022 | July | DJI Matrice 300 RTK | Dji Zenmuse P1 | Summer School DICA | 2469 | 11.5 |
+

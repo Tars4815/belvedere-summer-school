@@ -5,6 +5,11 @@ The module 5 of the course is dedicated to an introduction on the stereo process
 
 ## Learning outcomes
 
+In this module you will learn:
+
+- how to perform a feature matching between two images by using Deep Learning algorithms, that are necessary for wide baseline stereo reconstruction;
+- how to perform a stereo reconstruction from a stereo pair of images acquired in a single epoch;
+- how to perform a multitemporal stereo reconstruction from a set of stereo pairs of images acquired in different epochs.
 
 ## Table of contents
 
