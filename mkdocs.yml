@@ -15,20 +15,20 @@ theme:
 # Customization
 extra:
   social:
-    - icon: fontawesome/brands/twitter 
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/LabMGF
     - icon: fontawesome/brands/github
       link: https://github.com/labmgf-polimi
   consent:
     title: Cookie consent
-    description: >- 
+    description: >-
 
 
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
-      
+
 repo_url: https://github.com/Tars4815/belvedere-summer-school
 
 plugins:
@@ -45,41 +45,45 @@ plugins:
 
 markdown_extensions:
   - attr_list
+  - pymdownx.arithmatex: # Add support for LaTeX math
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 # Page tree
 nav:
   - Home: index.md
   - Introduction: introduction.md
   - Module 1:
-    - module1/module1.md
-    - module1/instrumental-techniques.md
-    - module1/monitoring-campaigns.md
-    - module1/monitoring-results.md
-  - Module 2: 
-    - module2/module2.md
-    - module2/intro.md
-    - module2/intro-metashape.md
-    - module2/workflow-metashape.md
-  - Module 3: module3/module3.md
+      - module1/module1.md
+      - module1/instrumental-techniques.md
+      - module1/monitoring-campaigns.md
+      - module1/monitoring-results.md
+  - Module 2:
+      - module2/module2.md
+      - module2/intro.md
+      - module2/intro-metashape.md
+      - module2/workflow-metashape.md
+  - Module 3:
+      - module3/module3.md
+      - module3/intro.md
+      - module3/gnss.md
   - Module 4:
-    - module4/module4.md
-    - module4/intro.md
-    - module4/vector.md
-    - module4/raster.md
-    - module4/layout.md  
-  - Module 5: 
-    - 'Overview': 'module5/module5.md'
-    - 'Getting started': 'module5/getting_started.md'
-    - 'Data preparation': 'module5/data_preparation.md'
-    - 'Feature matching': 'module5/matching.ipynb'
-    - 'Stereo reconstruction': 'module5/single_epoch_stereo_reconstruction.ipynb'
-    - 'Multi-epoch processing': 'module5/multi_epoch_processing.ipynb'
+      - module4/module4.md
+      - module4/intro.md
+      - module4/vector.md
+      - module4/raster.md
+      - module4/layout.md
+  - Module 5:
+      - "Overview": "module5/module5.md"
+      - "Getting started": "module5/getting_started.md"
+      - "Data preparation": "module5/data_preparation.md"
+      - "Feature matching": "module5/matching.ipynb"
+      - "Stereo reconstruction": "module5/single_epoch_stereo_reconstruction.ipynb"
+      - "Multi-epoch processing": "module5/multi_epoch_processing.ipynb"
   - Belvedere Open Data: data.md
   - Credits: credits.md
   - References: references.md
-
-
-
-
-
-
