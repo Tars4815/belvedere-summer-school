@@ -28,6 +28,37 @@ where $\rho$ is the satellite-receiver distance, $d{t}_{R}$ is the receiver cloc
 \[\rho = \sqrt{{\left({X}^{S} - {X}_{R}\right)}^{2} + {\left({Y}^{S} - {Y}_{R}\right)}^{2} + {\left({Z}^{S} - {Z}_{R}\right)}^{2}}
 \]
 
-The unknown of the problem are represented by the coordinates of the receiver , , , since the coordinates of the satellites are known from the ephemerides.
+The unknown of the problem are represented by the coordinates of the receiver ${X}_{R}$, ${Y}_{R}$, ${Z}_{R}$, since the coordinates of the satellites are known from the ephemerides.
 
 ![Pseudo-range](./img/pseudo_range2.png "Pseudo-range")
+
+## Phase observations
+
+This observation is analogous to the pseudo-range one. However, due to the small wavelength (in the order of 20 cm) also the integer number $N$ of cycles between satellite and receiver must be considered and introduced into the equation.
+
+\[ {L}_{R}^{S} = \rho + c \left( d{t}_{R} + d{t}^{S} \right) + {I}_{R}^{S} + {T}_{R}^{S} + {N}^{S} \lambda
+\]
+
+![Phase observations](./img/phase_observations.png "Phase observations")
+
+Once the receiver “lock” the carrier phase, the number of cycles between subsequent epochs can be observed and it is no more an unknown. Therefore, only the initial phase ambiguity is an unknown, unless the “lock” is missed (e.g., for a cycle-sleep). Phase observations have generally an observation accuracy better than 5 mm.
+
+### Observation errors: biases
+
+Possible biases present in the observations due to:
+
+- Multipath, namely the reflection of the signal over obstacles present around the receiver position
+
+  ![Multipath](./img/multipath.png "Multipath")
+
+- Atmosphere delays, due to the fact that the electromagnetic signal is not travelling at the speed of light because of atmosphere mass density.
+
+  ![Atmosphere delays](./img/atmosphere_delays.png "Atmosphere delays")
+
+- Ephemerides prediction / computation errors.
+
+  ![Ephemerides prediction / computation errors](./img/ephemerides_prediction.png "Ephemerides prediction / computation errors")
+
+- Cycle-sleeps, namely missing the satellite phase observations during consequent epochs (e.g. due to the presence of obstacles)
+
+  ![Cycle-sleeps](./img/cycle_sleeps.png "Cycle-sleeps")

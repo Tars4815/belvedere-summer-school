@@ -71,6 +71,7 @@ nav:
       - module3/module3.md
       - module3/intro.md
       - module3/gnss.md
+      - module3/positioning.md
   - Module 4:
       - module4/module4.md
       - module4/intro.md
