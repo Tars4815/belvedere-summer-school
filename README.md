@@ -4,14 +4,14 @@ A repository for documentation and sharing of learning material produced as part
 
 ## Course website
 
-[...]
+You can visit the course website at this [https://tars4815.github.io/belvedere-summer-school/](https://tars4815.github.io/belvedere-summer-school/)
 
 ## Acknowledgements
 
-[...]
+The teaching material of the Belvedere glacier summer school collected on this openly accessible website has been prepared by members of the LabMGF of the Department of Civil and Environmental Engineering of Politecnico di Milano under the coordination of prof. Livio Pinto:
 
-## License
-
-[...]
-
-// Under construction //
+- Federico Barbieri, research fellow
+- Rebecca Fascia, PhD candidate
+- Federica Gaspari, PhD candidate
+- Francesco Ioli, PhD candidate
+- Lorenzo Rossi, permanent research fellow
