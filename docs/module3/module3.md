@@ -1,6 +1,6 @@
 # Overview
 
-The module 4 of the course is dedicated to **GNSS** theory.
+The module 3 of the course is dedicated to **GNSS** theory.
 
 ## Learning outcomes
 

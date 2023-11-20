@@ -1,4 +1,5 @@
 # Stereoprocessing
+
 # Overview
 
 The module 5 of the course is dedicated to an introduction on the stereo processing from fixed-time-lapse cameras.
@@ -19,10 +20,9 @@ In this module you will learn:
 
 3. **[Feature matching](matching.ipynb)**: explain how to perform a feature matching between two images by using Deep Learning algorithms, that are necessary for wide baseline stereo reconstruction.
 
-4. **[Single epoch stereo riconstruction](single_epoch_stereo_reconstruction.ipynb)**: explain how to perform a stereo reconstruction from a stereo pair of images acquired in a single epoch.
+4. **[Single epoch stereo reconstruction](single_epoch_stereo_reconstruction.ipynb)**: explain how to perform a stereo reconstruction from a stereo pair of images acquired in a single epoch.
 
 5. **[Multitemporal stereo reconstruction](multi_epoch_processing.ipynb)**: explain how to perform a multitemporal stereo reconstruction from a set of stereo pairs of images acquired in different epochs.
-
 
 ## Software
 
