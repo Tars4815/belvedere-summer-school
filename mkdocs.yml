@@ -85,6 +85,12 @@ nav:
       - "Feature matching": "module5/matching.ipynb"
       - "Stereo reconstruction": "module5/single_epoch_stereo_reconstruction.ipynb"
       - "Multi-epoch processing": "module5/multi_epoch_processing.ipynb"
+  - Module 6:
+      - module6/module6.md
+      - module6/intro.md
+      - module6/getting-started.md
+      - module6/web-viewer.md
+      - module6/custom-viewer.md
   - Belvedere Open Data: data.md
   - Credits: credits.md
   - References: references.md
