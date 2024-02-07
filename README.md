@@ -22,16 +22,18 @@ You can visit the course website at this [https://tars4815.github.io/belvedere-s
 
 6. **[Module 5](https://tars4815.github.io/belvedere-summer-school/module5/module5/)**: this modules gives an introduction on the stereo processing from fixed-time-lapse cameras.
 
-7. **[Belvedere Open Data](https://tars4815.github.io/belvedere-summer-school/data/)**: this module describes the open data collected during the summer school.
+7. **Module 6**: this modules provides the basics for 3D data sharing and visualisation on web [**CURRENTLY UNDER REVIEW**]
 
-8. **[Credits](https://tars4815.github.io/belvedere-summer-school/credits/)**: this module describe in details the individual contributions of the developers team.
+8. **[Belvedere Open Data](https://tars4815.github.io/belvedere-summer-school/data/)**: this module describes the open data collected during the summer school.
 
-9. **[References](https://tars4815.github.io/belvedere-summer-school/references/)**: this module provides a list of references used during the summer school.
+9. **[Credits](https://tars4815.github.io/belvedere-summer-school/credits/)**: this module describe in details the individual contributions of the developers team.
+
+10. **[References](https://tars4815.github.io/belvedere-summer-school/references/)**: this module provides a list of references used during the summer school.
 
 
 ## Acknowledgements
 
-The teaching material of the Belvedere glacier summer school collected on this openly accessible website has been prepared by members of the LabMGF of the Department of Civil and Environmental Engineering of Politecnico di Milano under the coordination of prof. Livio Pinto:
+The teaching material of the Belvedere glacier summer school collected on this openly accessible website has been prepared by members of the LabMGF of the Department of Civil and Environmental Engineering of Politecnico di Milano under the coordination of professor Livio Pinto:
 
 - Federico Barbieri, research fellow
 - Rebecca Fascia, PhD candidate
