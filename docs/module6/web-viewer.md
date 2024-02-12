@@ -119,6 +119,82 @@ converted_pointcloud_folder
 |	octree.bin  
 ```
 
-Copy the whole folder and paste it inside the *pointclouds* folder. In order to include pointcloud(s) in the viewer, create a new .js file in the js folder and name it *pointcloud.js*. It will include all the detailed information for loading pointcloud properly in Potree. Then, open the pointcloud.js file with a text editor.
+Copy the whole folder and paste it inside the *pointclouds* folder. In order to include pointcloud(s) in the viewer, create a new .js file in the js folder and name it *pointcloud.js*. It will include all the detailed information for loading pointcloud properly in Potree. Then, open the pointcloud.js file with a text editor. Let's start by inserting:
 
-**[..UNDER CONSTRUCTION..]**
+```
+/* Loading Potree viewer in the Potree Render Area defined in index.html */
+window.viewer = new Potree.Viewer(document.getElementById("potree_render_area"));
+```
+
+This line will assign to the global variable *viewer* a new instance of the Potree viewer that is contained in the div of class *potree_render_area* in the *index.html* file.
+
+Then, the default settings for the viewer are defined:
+
+```
+...
+/* Defining appearance settings for rendering in the viewer */
+viewer.setEDLEnabled(true); // Enabling Eye-Dome-Lighting option
+viewer.setFOV(60); // Defining Field of view
+viewer.setPointBudget(2_000_000); // Defining point budget
+viewer.setDescription("Explore the oriented images of the model on a desktop browser."); // Setting a description to be shown on top of viewer
+```
+
+The sidebar structure is then defined as follows:
+
+```
+/* Loading the settings for the Potree sidebar */
+viewer.loadGUI(() => {
+    viewer.setLanguage('en');
+    viewer.toggleSidebar();
+    $("#menu_appearance").next().show();
+    $("#menu_tools").next().show();
+    /* Creating a new sidebar section for credits */
+    let section = $(`<h3 id="menu_meta" class="accordion-header ui-widget"><span>Credits</span></h3><div class="accordion-content ui-widget pv-menu-list"></div>`);
+    let content = section.last();
+    content.html(`
+    <div class="pv-menu-list">
+        <li>INSERT TEXT HERE</li>
+    </div>
+    `);
+    content.hide();
+    section.first().click(() => content.slideToggle());
+    section.insertBefore($('#menu_appearance'));
+});
+```
+
+Finally, the pointcloud is loaded by first creating a new Potree scene, setting it as the current scene of the viewer and then calling the *.loadPointcloud()* method.
+
+```
+...
+/* Define scene for the bridge */
+let belvederescene = new Potree.Scene();
+/* Set scene to be loaded in the Potree Viewer */
+viewer.setScene(belvederescene);
+/* Loading point cloud data and its setting for rendering in Potree Viewer */
+Potree.loadPointCloud("./pointclouds/converted_pointcloud_folder/metadata.json", "Glacier cloud", e => {
+    let pointcloud = e.pointcloud;
+    let material = pointcloud.material;
+    material.size = 0.6;
+    material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
+    material.shape = Potree.PointShape.CIRCLE;
+    material.activeAttributeName = "rgba"; // change this value to "classification" and uncomment the next 2 lines if you desire to show the classified point cloud
+    // material.intensityRange = [1, 100];
+    // material.gradient = Potree.Gradients.RAINBOW;
+    belvederescene.addPointCloud(pointcloud);
+    viewer.setFrontView();
+});
+```
+
+Now, in the `body` tag in the *index.html* file includes a link to the script file you just defined.
+
+```
+<body>
+...
+<!-- Import POINTCLOUD-->
+<script src="js/pointcloud.js"></script>
+</body>
+```
+
+Now, with XAMPP activated, access the *localhost/belvedere-example* address on your preferred browser. The basic viewer template for Belvedere is ready and visible.
+
+[INSERT IMAGE HERE]
