@@ -22,7 +22,7 @@ You can visit the course website at this [https://tars4815.github.io/belvedere-s
 
 6. **[Module 5](https://tars4815.github.io/belvedere-summer-school/module5/module5/)**: this modules gives an introduction on the stereo processing from fixed-time-lapse cameras.
 
-7. **Module 6**: this modules provides the basics for 3D data sharing and visualisation on web [**CURRENTLY UNDER REVIEW**]
+7. **[Module 6](https://tars4815.github.io/belvedere-summer-school/module6/module6/)**: this modules provides the basics for 3D data sharing and visualisation on web [**CURRENTLY UNDER REVIEW**]
 
 8. **[Belvedere Open Data](https://tars4815.github.io/belvedere-summer-school/data/)**: this module describes the open data collected during the summer school.
 
