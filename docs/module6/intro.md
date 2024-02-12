@@ -21,7 +21,7 @@ Download the Potree ,zip files for Windows from this link: https://github.com/po
 
 Once you downloaded the installer .zip, extract all the files and execute PotreeDesktop.bat. Then, a new window will appear with the main Graphic User Interface of Potree.
 
-![Potree Desktop Main Graphic User Interface](../assets/img/module6/potree-desktop-gui.png "Potree Desktop Main Graphic User Interface")
+![Potree Desktop Main Graphic User Interface](../assets/img/module6/potree-desktop-gui.PNG "Potree Desktop Main Graphic User Interface")
 
 The Potree GUI is made of 2 components:
 
@@ -33,11 +33,11 @@ The Potree GUI is made of 2 components:
 
 PotreeDesktop provides also a user-friendly interface for converting pointclouds in a Potree-compatible format. In order to do this, you can simply drag&drop the desired poincloud file (in a .las/.laz format) inside the viewer window. In a new window, after checking that the output target folder and the input files directory are defined as desired, it is required to select the PotreeConverter version to be adopted for the processing. Version 2.0 is the suggested one, generating only 3 files instead of thousands to millions. Click on the Start Conversion button to continue.
 
-![Potree Desktop Point cloud conversion](../assets/img/module6/potree-desktop-gui.png "Potree Desktop Point cloud conversion")
+![Potree Desktop Point cloud conversion](../assets/img/module6/potree-desktop-gui.PNG "Potree Desktop Point cloud conversion")
 
 After the processing, the pointcloud is loaded in the viewer and the converted files are available in the previously defined output target directory.
 
-![Potree Desktop Main Graphic User Interface](../assets/img/module6/potree-desktop-cloud.png "Potree Desktop Main Graphic User Interface")
+![Potree Desktop Main Graphic User Interface](../assets/img/module6/potree-desktop-cloud.PNG "Potree Desktop Main Graphic User Interface")
 
 ## Potree Converter
 
@@ -47,7 +47,7 @@ PotreeConverter generates an octree LOD structure for streaming and real-time re
 
 Download and extract the PotreeConverter files for Windwos from this link: https://github.com/potree/PotreeConverter/releases
 
-![Potree Converter Installation package](../assets/img/module6/potree-converter-installing.png "Potree Converter Installation package")
+![Potree Converter Installation package](../assets/img/module6/potree-converter-installing.PNG "Potree Converter Installation package")
 
 Be sure that the PotreeConverter.exe is present inside the unzipped folder.
 
@@ -71,7 +71,7 @@ Where:
 
 After launching, the conversion is executed and details about each step of the the processing are reported on the cmd shell window.
 
-![Potree Converter conversion details](../assets/img/module6/potree-converter-conversion-details.png "Potree Converter conversion details")
+![Potree Converter conversion details](../assets/img/module6/potree-converter-conversion-details.PNG "Potree Converter conversion details")
 
 If successful, the conversion procedure gives as output a folder named as defined in the command (in this case output) containing 3 elements:
 
