@@ -198,4 +198,4 @@ Now, in the `body` tag in the *index.html* file includes a link to the script fi
 
 Now, with XAMPP activated, access the *localhost/belvedere-example* address on your preferred browser. The basic viewer template for Belvedere is ready and visible. The OpenStreetMap webmap widget is also visible thanks to the definition of the reference system of the cloud in the *pointcloud.js* file.
 
-![Potree viewer for the Belvedere example](../assets/img/module6/potree-viewer-belvedere-example.PNG "Potree viewer for the Belvedere example")
+![Potree viewer for the Belvedere example](../assets/img/module6/potree-viewer-belvedere-example.png "Potree viewer for the Belvedere example")

@@ -25,6 +25,7 @@ Francesco Ioli
 - Module 3: Lorenzo Rossi
 - Module 4: Federica Gaspari
 - Module 5: Francesco Ioli
+- Module 6: Federica Gaspari
 - Belvedere Open Data: Francesco Ioli
 
 ### Supervision
