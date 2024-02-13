@@ -174,6 +174,7 @@ viewer.setScene(belvederescene);
 Potree.loadPointCloud("./pointclouds/converted_pointcloud_folder/metadata.json", "Glacier cloud", e => {
     let pointcloud = e.pointcloud;
     let material = pointcloud.material;
+    pointcloud.projection = "+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs +type=crs";
     material.size = 0.6;
     material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
     material.shape = Potree.PointShape.CIRCLE;
@@ -195,6 +196,6 @@ Now, in the `body` tag in the *index.html* file includes a link to the script fi
 </body>
 ```
 
-Now, with XAMPP activated, access the *localhost/belvedere-example* address on your preferred browser. The basic viewer template for Belvedere is ready and visible.
+Now, with XAMPP activated, access the *localhost/belvedere-example* address on your preferred browser. The basic viewer template for Belvedere is ready and visible. The OpenStreetMap webmap widget is also visible thanks to the definition of the reference system of the cloud in the *pointcloud.js* file.
 
-[INSERT IMAGE HERE]
+![Potree viewer for the Belvedere example](../assets/img/module6/potree-viewer-belvedere-example.PNG "Potree viewer for the Belvedere example")
