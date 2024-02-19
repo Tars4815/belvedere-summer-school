@@ -14,9 +14,30 @@ Generally, in a normal exploration session of the viewer, users can add georefer
 
 Once clicked, it is necessary to navigate in the viewer, look for the desired perspective on the scene and then right-click again on the point where you'd like to position the annotation. A black label with the text *Annotation Title* will then be added to the scene. The new element will also be visile in the *Scene > Annotations* section in the sidebar. By clicking on it there, in the *Properties* it will be possible to type the desired Title and Description.
 
-![Potree sidebar with create annotation icon](../assets/img/module6/annotation-title-description.png "Potree sidebar with create annotation icon")
+![Potree viewer with newly created annotation](../assets/img/module6/annotation-title-description.png "Potree viewer with newly created annotation")
 
-[...]
+This solution represents the easiest way to include annotations but it is temporary: when the user refreshes the page, reloading the content of the Potree page, the annotations inserted during that session will disappear.
+
+If the aim is to insert permanently some annotations in the scene, it is needed to code them inside the source. To achieve this, create a new file named *annotations.js* inside the js folder. Then call it inside the *index.html* structure:
+
+```
+<body>
+...
+<!-- Import ANNOTATIONS-->
+<script src="js/annotations.js"></script>
+</body>
+```
+
+Now, let's define some annotations inside the *annotations.js* file with the help of the viewer. With *localhost/belvedere-example* open, navigate in the viewer and position yourself with the perspective you'd like to have when you click on a given annotation. For example, let's try to configure the annotation described earlier in the code.
+
+Before working on the code, explore the point cloud in the viewer, activate the **Point Measurement Tool** and double-click in correspondence of the point where you'd like to locate the annotation. Hence, explore the Scene section in the Potree Sidebar and select the point measurement element. In the lower part of the section now you see the details of the measurement as well as the clicked point coordinates. Click on the copy icon next to the coordinates values: you will need this data to position your new annotation.
+
+![Point measurement for anntation positioning](../assets/img/module6/annotation-point-measurements.png "Point measurement for anntation positioning")
+
+Hence, to complete the procedure, you need to define the camera view to be set when the annotation is clicked in Potree. In order to do this, rotate and move the model view and look for the desired perspective. Then, in the scene section of the sidebar, click on Camera: you will make visible a new Properties panel in which the coordinates linked to the camera position and camera target location that defines the actual view in the scene will be displayed. Copy and paste these values in the code according to the comment.
+
+![Annotation camera settings](../assets/img/module6/annotation-camera-settings.png "Annotation camera settings")
+
 
 ## Inserting oriented images
 
