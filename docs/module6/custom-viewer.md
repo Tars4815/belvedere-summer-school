@@ -142,3 +142,11 @@ Potree.OrientedImageLoader.load(cameraParams1, imageParams1, viewer).then(images
 If you'd like to define another oriented images chunk, copy the entire code block of the first chunk and paste it right in first row below it in the js script. Then modify it according to your needs.
 
 N.B.: Variable and constant names should be unique!
+
+Now, refreshing the viewer page results in displaying several small black rectangles bordered in green, one for each oriented image inserted in the scene. Their position and orientation in space are based on the parameters passed through the *images_eo.tc* file. Also, if the oriented images integration has been successfull, you should be able to see in the Sidebar > Scene section a new *images* entity in the list.
+
+![Oriented images loaded in the Potree scene](../assets/img/module6/oriented-cameras-scene.png "Oriented images loaded in the Potree scenes")
+
+When clicking on one of the rectangles, the user will enter the picture visualisation mode, accessing the selected oriented images aligned to the point clouds. This means that not only it is possible to analyse in high resolution the images that originated the cloud through the photogrammetric reconstruction, but also to execute measurements with the support of the image and reproject them in 3D on the point cloud.
+
+![Example of a single oriented image view in Potree](../assets/img/module6/oriented-image-view.png "Example of a single oriented image view in Potree")
