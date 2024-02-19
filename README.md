@@ -12,17 +12,27 @@ You can visit the course website at this [https://tars4815.github.io/belvedere-s
 
 1. **[Introduction](https://tars4815.github.io/belvedere-summer-school/introduction/)**: This module gives a brief introduction to the course, providing a general overview of the summer school and the main topics covered during the course.
 
+![Belvedere Location](docs/assets/img/intro/belvedere_location.png "Belvedere Location")
+
 2. **[Module 1](https://tars4815.github.io/belvedere-summer-school/module1/module1/)**: this module describes the monitoring activity carried out on the Belvedere Glacier with UAV photogrammetry and GNSS.
+
+![GNSS survey plan of the Belvedere glacier](docs/assets/img/module1/GNSS-survey-3.jpg "GNSS survey plan of the Belvedere glacier")
 
 3. **[Module 2](https://tars4815.github.io/belvedere-summer-school/module2/module2/)**: this modules give an introduction to photogrammetry.
 
+![Collinearity entities schema](docs/assets/img/module2/collinearity-elements.jpg "Collinearity entities schema")
+
 4. **[Module 3](https://tars4815.github.io/belvedere-summer-school/module3/module3/)**: this module gives an introduction to GNSS positioning.
+
+![Relative positioning](docs/module3/img/relative_positioning.png "Relative positioning")
 
 5. **[Module 4](https://tars4815.github.io/belvedere-summer-school/module4/module4/)**: this module gives an introduction to GIS and spatial data analysis.
 
+![GIS module](docs/assets/img/module4/raster-calculator-map-canvas.png "GIS module")
+
 6. **[Module 5](https://tars4815.github.io/belvedere-summer-school/module5/module5/)**: this modules gives an introduction on the stereo processing from fixed-time-lapse cameras.
 
-7. **[Module 6](https://tars4815.github.io/belvedere-summer-school/module6/module6/)**: this modules provides the basics for 3D data sharing and visualisation on web [**CURRENTLY UNDER REVIEW**]
+7. **[Module 6](https://tars4815.github.io/belvedere-summer-school/module6/module6/)**: this modules provides the basics for 3D data sharing and visualisation on web
 
 8. **[Belvedere Open Data](https://tars4815.github.io/belvedere-summer-school/data/)**: this module describes the open data collected during the summer school.
 

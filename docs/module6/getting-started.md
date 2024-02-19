@@ -9,3 +9,7 @@ Due to strict security policies in browsers, it is not possible to open potree h
 After you’ve installed and started Apache/XAMPP, you can access files in your htdocs directory through a localhost URL. Assuming your htdocs directory is *C:xampphtdocs*, you can access it in your browser with:
 
 ` http://localhost `
+
+## Choosing a text editor
+
+This module is strongly focused in coding, despite if no prior knowledge of HTML, CSS and JS is needed. For this reason, a proper and efficient text editor is highly recommended. We suggest to use **[Visual Studio Code](https://github.com/microsoft/vscode)** with Prettier extension installed.
