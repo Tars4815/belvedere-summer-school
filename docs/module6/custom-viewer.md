@@ -34,10 +34,51 @@ Before working on the code, explore the point cloud in the viewer, activate the 
 
 ![Point measurement for anntation positioning](../assets/img/module6/annotation-point-measurements.png "Point measurement for anntation positioning")
 
-Hence, to complete the procedure, you need to define the camera view to be set when the annotation is clicked in Potree. In order to do this, rotate and move the model view and look for the desired perspective. Then, in the scene section of the sidebar, click on Camera: you will make visible a new Properties panel in which the coordinates linked to the camera position and camera target location that defines the actual view in the scene will be displayed. Copy and paste these values in the code according to the comment.
+Hence, to complete the procedure, you need to define the camera view to be set when the annotation is clicked in Potree. In order to do this, rotate and move the model view and look for the desired perspective. Then, in the scene section of the sidebar, click on Camera: you will make visible a new Properties panel in which the coordinates linked to the camera position and camera target location that defines the actual view in the scene will be displayed.
 
 ![Annotation camera settings](../assets/img/module6/annotation-camera-settings.png "Annotation camera settings")
 
+Then, open the *annotations.js* in your preferred text editor. Copy and paste the following JS code:
+
+```
+/* Annotations definition */
+function createAnnotation(scene, titleText, position, cameraPosition, cameraTarget, description) {
+    // Create title element
+    let titleElement = $(`<span>${titleText}</span>`);
+    // Create Potree.Annotation instance
+    let annotation = new Potree.Annotation({
+        position: position,
+        title: titleElement,
+        cameraPosition: cameraPosition,
+        cameraTarget: cameraTarget,
+        description: description
+    });
+    // Set the annotation to be visible
+    annotation.visible = true;
+    // Add the annotation to the scene
+    scene.annotations.add(annotation);
+    // Override toString method for title element
+    titleElement.toString = () => titleText;
+}
+```
+
+This code snippet defines a function that creates an annotation with a specified title, position, camera settings, and description and adds it to a 3D scene using the Potree library.
+Given such definition, a new annotation can be finally created, using the info collected through the viewer and copying and pasting them in the correct rows.
+
+```
+...
+// Annotation example 1
+createAnnotation(
+    scene,
+    "North-western lobe",
+    [416441.129, 5091064.330, 1867.242], //Pasted from the Point Measurement Tool
+    [416559.997, 5091132.073, 1920.620], //Pasted from the camera object (position)
+    [416439.927, 5091060.932, 1869.774], //Pasted from the camera object (target)
+    'This is the glacier section we surveyed with a terrestrial laser scanner as well as with UAVs'
+)
+```
+
+Once saved, such an edit will allows to easily view and access the defined annotation at each new session. If additional annotations are needed, simply copy and paste the last code snippet, changing title and coordinates according to the case study needs.
 
 ## Inserting oriented images
 
