@@ -50,3 +50,7 @@ The teaching material of the Belvedere glacier summer school collected on this o
 - Federica Gaspari, PhD candidate
 - Francesco Ioli, PhD candidate
 - Lorenzo Rossi, permanent research fellow
+
+## References
+
+*  Gaspari, F., Ioli, F., Barbieri, F., Fascia, R., Pinto, L., and Rossi, L.: **From theory to real-world geomatics applications: glacier monitoring fieldworks through an innovative teaching program**, *, Vienna, Austria, 14–19 Apr 2024, EGU24-16189, https://doi.org/10.5194/egusphere-egu24-16189, 2024
