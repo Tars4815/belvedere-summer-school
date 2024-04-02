@@ -20,11 +20,11 @@ You can visit the course website at this [https://tars4815.github.io/belvedere-s
         </td>
     </tr>
     <tr>
-        <td style="padding: 0px; text-align: center">Description of the monitoring activity carried out on the Belvedere Glacier with UAV photogrammetry and GNSS.
+        <td style="padding: 0px; text-align: center">Description of the <b>monitoring activity</b> carried out on the Belvedere Glacier with UAV photogrammetry and GNSS.
         </td>
-        <td style="padding: 0px; text-align: center">Introduction to photogrammetry theory concepts and applications.
+        <td style="padding: 0px; text-align: center">Introduction to <b>photogrammetry</b> theory concepts and applications.
         </td>
-        <td style="padding: 0px; text-align: center">Introduction to GNSS positioning, data acquisition and processing.
+        <td style="padding: 0px; text-align: center">Introduction to <b>GNSS positioning</b>, data acquisition and processing.
         </td>
     </tr>
     <tr>
@@ -44,25 +44,40 @@ You can visit the course website at this [https://tars4815.github.io/belvedere-s
 			</a>
 		</td>
     <tr>
+    <tr>
+        <td style="padding: 0px; text-align: center"><b>Module 4</b>
+        </td>
+        <td style="padding: 0px; text-align: center"><b>Module 5</b>
+        </td>
+        <td style="padding: 0px; text-align: center"><b>Module 6</b>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 0px; text-align: center">Introduction to <b>Geographic Information System</b> and spatial data analysis
+        </td>
+        <td style="padding: 0px; text-align: center">Introduction on the stereo processing from <b>fixed-time-lapse cameras</b>.
+        </td>
+        <td style="padding: 0px; text-align: center">Overview of the basics for <b>3D data sharing</b> and visualisation on web.
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 0px">
+			<a href="https://tars4815.github.io/belvedere-summer-school/module4/module4/" target="_blank">
+				<img src="docs/assets/img/module4/raster-calculator-map-canvas.png" width="200px" title="GIS module" alt="GIS module"/>
+			</a>
+		</td>
+        <td style="padding: 0px">
+			<a href="https://tars4815.github.io/belvedere-summer-school/module5/module5/" target="_blank">
+				<img src="" width="200px" title="" alt=""/>
+			</a>
+		</td>
+        <td style="padding: 0px">
+			<a href="https://tars4815.github.io/belvedere-summer-school/module6/module6/" target="_blank">
+				<img src="docs\assets\img\module6\potree-viewer-belvedere-example.png" width="200px" title="Potree platform" alt="Potree platform"/>
+			</a>
+		</td>
+    <tr>
 </table>
-
-1. **[Introduction](https://tars4815.github.io/belvedere-summer-school/introduction/)**: This module gives a brief introduction to the course, providing a general overview of the summer school and the main topics covered during the course.
-
-![Belvedere Location](docs/assets/img/intro/belvedere_location.png "Belvedere Location")
-
-5. **[Module 4](https://tars4815.github.io/belvedere-summer-school/module4/module4/)**: this module gives an introduction to GIS and spatial data analysis.
-
-![GIS module](docs/assets/img/module4/raster-calculator-map-canvas.png "GIS module")
-
-6. **[Module 5](https://tars4815.github.io/belvedere-summer-school/module5/module5/)**: this modules gives an introduction on the stereo processing from fixed-time-lapse cameras.
-
-7. **[Module 6](https://tars4815.github.io/belvedere-summer-school/module6/module6/)**: this modules provides the basics for 3D data sharing and visualisation on web
-
-8. **[Belvedere Open Data](https://tars4815.github.io/belvedere-summer-school/data/)**: this module describes the open data collected during the summer school.
-
-9. **[Credits](https://tars4815.github.io/belvedere-summer-school/credits/)**: this module describe in details the individual contributions of the developers team.
-
-10. **[References](https://tars4815.github.io/belvedere-summer-school/references/)**: this module provides a list of references used during the summer school.
 
 ## Acknowledgements
 
