@@ -79,6 +79,12 @@ You can visit the course website at this [https://tars4815.github.io/belvedere-s
     <tr>
 </table>
 
+## Open Data
+
+The data processed and finalised within the summer school and the Belvedere glacier monitoring project are openly available on Zenodo under a GNU GPL v.3.0. license.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10817029.svg)](https://doi.org/10.5281/zenodo.10817029)
+
 ## Acknowledgements
 
 The teaching material of the Belvedere glacier summer school collected on this openly accessible website has been prepared by members of the LabMGF of the Department of Civil and Environmental Engineering of Politecnico di Milano under the coordination of professor Livio Pinto:
