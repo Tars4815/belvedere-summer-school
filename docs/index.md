@@ -2,7 +2,7 @@
 
 This repository contains the learning material for the Summer School "**_Design and Implementation of Topographic Surveys for Territorial Monitoring in Mountain Environments_**", organized at the Belvedere Glacier (Italian Alps) by the Section of Geodesy and Geomatics of the Department of Civil and Environmental Engineering (DICA), Politecnico di Milano.
 
-This Teaching Material was supported by the EGU Higher Education Teaching Material Grant 2023.
+This Teaching Material was supported by the [EGU Higher Education Teaching Material Grant 2023](https://www.egu.eu/education/teg/hetg/2023/)
 
 ## The Summer School
 
