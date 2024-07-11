@@ -97,4 +97,6 @@ The teaching material of the Belvedere glacier summer school collected on this o
 
 ## References
 
+- Gaspari, F., Ioli, F., Barbieri, F., Bonora, S., Fascia, R., Pinto, L., and Migliaccio, F. (2024) **Bridging geomatics theory to real-world applications in alpine surveys through an innovative summer school teaching program**, *Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci.*, XLVIII-4/W12-2024, 59–66, https://doi.org/10.5194/isprs-archives-XLVIII-4-W12-2024-59-2024 
+
 - Gaspari, F., Ioli, F., Barbieri, F., Fascia, R., Pinto, L., and Rossi, L.: **From theory to real-world geomatics applications: glacier monitoring fieldworks through an innovative teaching program**, \*, Vienna, Austria, 14–19 Apr 2024, EGU24-16189, https://doi.org/10.5194/egusphere-egu24-16189, 2024
